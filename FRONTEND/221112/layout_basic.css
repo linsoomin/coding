@@ -1,0 +1,45 @@
+header, nav, section, aside, footer{
+    background-color: moccasin;
+    display: block;
+    /* 
+        inline 속성은 한 줄 한 줄,
+        block : 한 칸 한 칸 내려감
+    */
+    margin:3px;
+    /* margin:서로 서로 간격 */
+}
+header{
+    /* width: 100%; 
+     --> 블록 레벨 태그는 자동으로 옆을 채우는 형태
+         따라서 width : 100% 굳이 안 써도 됨!*/
+    height: 100px;
+}
+nav{
+    height:100%;
+    background-color: yellow;
+    width: 80%;
+    margin: 0px auto; /* header 안에서의 중앙에 두기 */
+}
+
+section{
+    width:80%;
+}
+
+aside{
+    width:20%;
+}
+
+div{
+    display:flex;
+    height:800px;
+}
+
+article{
+    width: 50%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+footer{
+    height:100px;
+}
