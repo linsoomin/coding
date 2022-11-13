@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive emrem</title>
+    <link rel="stylesheet" href="em.css">
+</head>
+<body>
+    <!-- 가변단위 em rem : 박스에서 텍스트 크기를 조정할 때 사용하는 상대적인 단위
+    1. em : 같은 요소의 font-size 또는 없으면 상위의 부모 요소의 font-size를 기준으로 함.
+    2. rem : 최상단 root 요소(=html tag) font-size를 기준 = 16px; -->
+   
+    <!-- 1em 2em 단위 비교 및 부모 요소 font size 기준으로 연습 -->
+    <div style = "font-size : 30px">
+        <p id="a"> 자식 요소의 1em 글꼴 크기 : 부모 * 1 = 30 * 1 </p>
+        <p id="b"> 자식 요소의 2em 글꼴 크기 : 부모 * 2 = 30 * 2 </p>
+    </div>
+
+    <!-- rem과 em 단위의 박스 크기 비교 -->
+    <div id="box-rem">rem r = root , 16에 10 따라서 width: 160px</div>
+    <div id="box-em">em fontsize:10px width:10em 따라서 width:100px</div>
+</body>
+</html>
